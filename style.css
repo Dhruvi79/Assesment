@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3c2c2;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  margin: 20px;
+}
+
+form {
+  background-color: white;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="mobile"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  padding: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: green;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}

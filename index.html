@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Enter your first name"
+          required
+          pattern="[a-zA-Z]"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Enter your last name"
+          required
+          pattern="[a-zA-Z]"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="It should contain @"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile:</label>
+        <input
+          type="text"
+          id="mobile"
+          name="mobile"
+          placeholder="Only 10 digits allowed"
+          required
+          pattern="[0-9]{10}"
+          maxlength="10"
+          title="Only 10 digits allowed"
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" checked required /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          cols="71"
+          placeholder="Enter your address"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+      </div>
+
+      <div class="form-group">
+        <label for="pin">Area PIN:</label>
+        <input
+          type="text"
+          id="pin"
+          name="pin"
+          maxlength="6"
+          pattern="[0-9]{6}"
+          required
+          title="Only 6 digit PIN allowed"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required />
+      </div>
+
+      <div class="form-group">
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification" required>
+          <option value="">Select Qualification</option>
+          <option value="ca">CA</option>
+          <option value="cs">CS</option>
+          <option value="llb">LLB</option>
+          <option value="bed">B.Ed</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Specialization:</label>
+        <input type="checkbox" name="specialization" value="cs" /> Computer
+        Science <br />
+        <input type="checkbox" name="specialization" value="it" /> Information
+        Technology
+        <br />
+        <input type="checkbox" name="specialization" value="architecture" />
+        Computer Architecture
+        <br />
+        <input type="checkbox" name="specialization" value="teleComm" /> Tele
+        Communication
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Registered" class="btn" />
+      </div>
+    </form>
+  </body>
+</html>
